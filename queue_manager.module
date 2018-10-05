@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Contains hos_queue_manager.module.
+ * Contains queue_manager.module.
  */
 
 use Drupal\Core\Routing\RouteMatchInterface;
@@ -10,10 +10,10 @@ use Drupal\Core\Routing\RouteMatchInterface;
 /**
  * Implements hook_help().
  */
-function hos_queue_manager_help($route_name, RouteMatchInterface $route_match) {
+function queue_manager_help($route_name, RouteMatchInterface $route_match) {
   switch ($route_name) {
-    // Main module help for the hos_queue_manager module.
-    case 'help.page.hos_queue_manager':
+    // Main module help for the queue_manager module.
+    case 'help.page.queue_manager':
       $output = '';
       $output .= '<h3>' . t('About') . '</h3>';
       $output .= '<p>' . t('Places messages in a queue to be sent out') . '</p>';
@@ -26,8 +26,8 @@ function hos_queue_manager_help($route_name, RouteMatchInterface $route_match) {
 /**
  * Implements hook_cron().
  */
-function hos_queue_manager_cron() {
-  $hosQueueManager = \Drupal::service('hos_queue_manager');
+function queue_manager_cron() {
+  $hosQueueManager = \Drupal::service('queue_manager');
   $message = 'Test by logging this message';
   $number = mt_rand(10000000, 99999999);
   $hosQueueManager->queueMessage($message, $number);

@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\hos_queue_manager;
+namespace Drupal\queue_manager;
 
 use Drupal\Core\Queue\QueueFactory;
 
@@ -22,7 +22,7 @@ class QueueManager implements QueueManagerInterface {
     $data['message'] = $message;
     $data['number'] = $number;
 
-    $messageQueue = $this->queueFactory->get('hos_message_queue');
+    $messageQueue = $this->queueFactory->get('message_queue');
     $messageQueue->createQueue();
     $messageQueue->createItem($data);
   }

@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\hos_queue_manager\Plugin\QueueWorker;
+namespace Drupal\queue_manager\Plugin\QueueWorker;
 
 use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
 use Drupal\Core\Queue\QueueWorkerBase;

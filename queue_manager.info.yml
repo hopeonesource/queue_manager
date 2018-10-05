@@ -1,4 +1,4 @@
-name: 'hos queue manager'
+name: 'queue manager'
 type: module
 description: 'Places messages in a queue to be sent out'
 core: 8.x

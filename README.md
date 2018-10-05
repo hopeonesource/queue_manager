@@ -1,6 +1,6 @@
-# hos_queue_manager
+# queue_manager
 
-This Drupal 8 module is queues text messages/alerts to be sent out by the message dispatcher service. The messaging queue is implemented using a QueueWorker and executed using hos_queue_manager_cron.
+This Drupal 8 module is queues text messages/alerts to be sent out by the message dispatcher service. The messaging queue is implemented using a QueueWorker and executed using queue_manager_cron.
 
 ## Inputs
 * message text

@@ -1,0 +1,4 @@
+services:
+  queue_manager:
+    class: Drupal\queue_manager\QueueManager
+    arguments: ['@queue']

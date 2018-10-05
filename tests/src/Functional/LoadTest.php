@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\Tests\hos_queue_manager\Functional;
+namespace Drupal\Tests\queue_manager\Functional;
 
 use Drupal\Core\Url;
 use Drupal\Tests\BrowserTestBase;
@@ -8,7 +8,7 @@ use Drupal\Tests\BrowserTestBase;
 /**
  * Simple test to ensure that main page loads with module enabled.
  *
- * @group hos_queue_manager
+ * @group queue_manager
  */
 class LoadTest extends BrowserTestBase {
 
@@ -17,7 +17,7 @@ class LoadTest extends BrowserTestBase {
    *
    * @var array
    */
-  public static $modules = ['hos_queue_manager'];
+  public static $modules = ['queue_manager'];
 
   /**
    * A user with permission to administer site configuration.

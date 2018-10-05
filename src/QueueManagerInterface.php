@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\hos_queue_manager;
+namespace Drupal\queue_manager;
 
 /**
  * Interface QueueManagerInterface.
