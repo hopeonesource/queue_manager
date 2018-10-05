@@ -26,4 +26,11 @@ class QueueManager implements QueueManagerInterface {
     $messageQueue->createQueue();
     $messageQueue->createItem($data);
   }
+
+  /**
+   * @inheritdoc
+   */
+  public function nodeProcessor($nodeId){
+    // to be implemented during the sprint
+  }
 }

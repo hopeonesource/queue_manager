@@ -17,4 +17,13 @@ interface QueueManagerInterface {
    *
    */
   public function queueMessage($message, $number);
+
+  /**
+   * @param integer $nodeId
+   *
+   * @return array
+   *
+   * array('message' => 'node title, array(123456789, 987654321))
+   */
+  public function nodeProcessor($nodeId);
 }
